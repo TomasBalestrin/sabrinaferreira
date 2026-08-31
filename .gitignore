@@ -1,0 +1,9 @@
+# Fotos originais enviadas pelo cliente (1,4 GB, estouraria o limite do GitHub).
+# O site usa as versões já redimensionadas em assets/.
+originais/
+
+# macOS
+.DS_Store
+
+# Cópias de revisão geradas durante o desenvolvimento
+_review.html

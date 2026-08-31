@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Arquitetura e Design de Interiores em Florianópolis | Sabrina Ferreira</title>
+<meta name="description" content="Projetos de arquitetura e design de interiores em Florianópolis e região. Mais de 10 anos de experiência, CASACOR 2025 e acompanhamento do projeto à obra.">
+<link rel="canonical" href="https://www.sabrinaferreirainteriores.com/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Arquitetura e design de interiores em Florianópolis | Sabrina Ferreira">
+<meta property="og:description" content="Projetos exclusivos de arquitetura e design de interiores, criados para refletir o seu estilo de vida.">
+<meta property="og:image" content="assets/hero/banner.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=Spectral:wght@200;300;400;600&display=swap" rel="stylesheet">
+<link rel="icon" href="assets/marca.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="pular" href="#projetos">Ir para os projetos</a>
+
+<header class="topo" id="topo">
+  <a class="marca" href="#topo" aria-label="Sabrina Ferreira Interiores, página inicial">
+    <svg class="marca__icone" viewBox="0 0 48 48" aria-hidden="true">
+      <path d="M12 40V21a12 12 0 0 1 24 0v19" fill="none" stroke="currentColor" stroke-width="2.2"/>
+      <path d="M24 40V11" fill="none" stroke="currentColor" stroke-width="2.2" opacity=".5"/>
+    </svg>
+    <span class="marca__nome">Sabrina Ferreira<i>Interiores</i></span>
+  </a>
+
+  <nav class="menu" aria-label="Principal">
+    <a href="#escritorio">Escritório</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#time">Time</a>
+    <a href="#casacor">CASACOR</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <a class="wpp" href="https://wa.me/5548988482359?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20conversa%20sobre%20um%20projeto%20de%20interiores." target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.18 8.18 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.83 2.41a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.15.16-.29.18-.53.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.71-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.47c-.16 0-.43.06-.65.31-.22.24-.86.84-.86 2.05s.88 2.38 1 2.54c.12.17 1.73 2.64 4.19 3.7.59.25 1.04.4 1.4.52.59.19 1.12.16 1.54.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.11-.22-.17-.47-.29Z"/></svg>
+    <span>Agendar conversa</span>
+  </a>
+
+  <button class="hamburguer" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-mobile">
+    <span></span><span></span>
+  </button>
+</header>
+
+<div class="menu-mobile" id="menu-mobile" hidden>
+  <nav aria-label="Menu mobile">
+    <a href="#escritorio">Escritório</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#time">Time</a>
+    <a href="#casacor">CASACOR</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#contato">Contato</a>
+  </nav>
+  <a class="menu-mobile__wpp" href="https://wa.me/5548988482359?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20conversa%20sobre%20um%20projeto%20de%20interiores." target="_blank" rel="noopener">Agendar uma conversa</a>
+</div>
+
+<!-- ══ HERO ══ -->
+<section class="hero">
+  <picture class="hero__img">
+    <source media="(max-width: 760px)" srcset="assets/hero/banner-mobile.webp">
+    <img src="assets/hero/banner.webp" width="1920" height="1035" alt="Living integrado à varanda de uma cobertura, com mesa posta, lareira ecológica e vista para o mar" fetchpriority="high">
+  </picture>
+
+  <div class="hero__conteudo">
+    <h1 class="hero__nome">
+      <span class="cota cota--claro">Arquitetura e design de interiores em Florianópolis</span>
+      Projetos exclusivos, criados para refletir <em>o seu estilo de vida</em>
+    </h1>
+    <p class="hero__linha">Desenvolvemos projetos personalizados que unem estética, conforto e funcionalidade para criar ambientes únicos em cada detalhe.</p>
+    <ul class="selos">
+      <li>Mais de 10 anos de experiência</li>
+      <li>Participação na CASACOR 2025</li>
+      <li>Atendimento em Florianópolis e região</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ══ ESCRITÓRIO ══ -->
+<section class="manifesto" id="escritorio">
+  <div class="wrap">
+    <p class="cota">O escritório</p>
+    <blockquote class="manifesto__frase revelar">
+      Cada projeto começa ouvindo as pessoas. <em>É dessa escuta que nasce um ambiente que faz sentido para quem vai viver nele.</em>
+    </blockquote>
+    <div class="manifesto__texto revelar">
+      <p>Somos um escritório de arquitetura e design de interiores em Florianópolis. Transformamos necessidades, sonhos e estilos de vida em espaços que unem estética, conforto e funcionalidade.</p>
+      <p>Acompanhamos cada etapa com atenção aos detalhes, para que a experiência seja tão cuidada quanto o resultado.</p>
+    </div>
+
+    <ul class="diferenciais">
+      <li class="diferencial revelar">
+        <h3>Projeto autoral</h3>
+        <p>Nada de solução pronta. Cada ambiente nasce da rotina, do repertório e do jeito de viver de quem vai ocupá-lo.</p>
+      </li>
+      <li class="diferencial revelar">
+        <h3>Acompanhamento completo</h3>
+        <p>Do estudo preliminar à execução, seguimos junto com marcenaria, fornecedores e obra para o projeto chegar como foi desenhado.</p>
+      </li>
+      <li class="diferencial revelar">
+        <h3>Cuidado com o detalhe</h3>
+        <p>Iluminação, marcenaria, revestimentos e décor pensados no mesmo desenho, até o último acabamento.</p>
+      </li>
+    </ul>
+
+    <p class="manifesto__valores revelar">Sofisticação sem excesso, funcionalidade em cada metro e uma experiência exclusiva do primeiro encontro à entrega das chaves. É isso que buscamos em cada projeto que assinamos.</p>
+  </div>
+</section>
+
+<!-- ══ PROJETOS ══ -->
+<section class="projetos" id="projetos">
+  <div class="wrap">
+    <p class="cota">Projetos selecionados</p>
+    <h2 class="titulo-secao">Do primeiro traço ao último detalhe</h2>
+
+    <div class="filtros" role="tablist" aria-label="Filtrar projetos por categoria">
+      <button class="filtro is-ativo" data-filtro="todos" role="tab" aria-selected="true">Todos</button>
+      <button class="filtro" data-filtro="residencial" role="tab" aria-selected="false">Residencial</button>
+      <button class="filtro" data-filtro="comercial" role="tab" aria-selected="false">Comercial</button>
+      <button class="filtro" data-filtro="hotelaria" role="tab" aria-selected="false">Hotelaria</button>
+      <button class="filtro" data-filtro="casacor" role="tab" aria-selected="false">CASACOR</button>
+    </div>
+  </div>
+
+  <div class="grade" id="grade"></div>
+</section>
+
+<!-- ══ A ARQUITETA ══ -->
+<section class="sobre" id="sabrina">
+  <div class="wrap sobre__grid">
+    <div class="sobre__img revelar">
+      <img src="assets/sabrina.webp" width="1000" height="1250" alt="Retrato de Sabrina Ferreira, arquiteta de interiores, sentada no escritório" loading="lazy">
+    </div>
+    <div class="sobre__texto">
+      <p class="cota">A arquiteta</p>
+      <h2 class="titulo-secao">Sabrina Ferreira</h2>
+      <p>Há mais de 10 anos, Sabrina Ferreira desenvolve projetos de interiores personalizados, criando ambientes que unem sofisticação, funcionalidade e personalidade. Ao lado de uma equipe especializada, acompanha cada etapa com atenção aos detalhes, oferecendo uma experiência exclusiva do início ao fim.</p>
+      <p>Seu repertório passa por residências, coberturas, apartamentos, espaços comerciais e hotelaria, sempre com o mesmo ponto de partida: entender como a pessoa vive antes de desenhar.</p>
+      <p>Em 2025, levou esse olhar para a CASACOR Santa Catarina com o ambiente <em>Janelas para o Mundo</em>, em parceria com a Dimas Construções.</p>
+      <ul class="sobre__lista">
+        <li>Mais de 10 anos de experiência</li>
+        <li>Participação na CASACOR 2025</li>
+        <li>Projetos residenciais, comerciais e de hotelaria</li>
+        <li>Atendimento em Florianópolis e região</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ══ TIME ══ -->
+<section class="sobre sobre--claro" id="time">
+  <div class="wrap sobre__grid sobre__grid--invertido">
+    <div class="sobre__texto">
+      <p class="cota">Time</p>
+      <h2 class="titulo-secao">Um escritório inteiro no seu projeto</h2>
+      <p>Somos uma equipe de arquitetos que acredita que cada projeto começa ouvindo as pessoas. A partir dessa compreensão, transformamos necessidades, sonhos e estilos de vida em espaços que fazem sentido para quem irá vivê-los.</p>
+      <p>Cada etapa tem alguém responsável por ela: o desenho, o detalhamento, a especificação e o acompanhamento da execução. Você conversa com o escritório, e não com um contato isolado.</p>
+      <p>É esse trabalho conjunto que permite entregar projetos autorais em residências, apartamentos, coberturas, espaços comerciais e hotelaria, sem abrir mão do cuidado com o detalhe em nenhum deles.</p>
+    </div>
+    <div class="sobre__img sobre__img--time revelar">
+      <img src="assets/equipe.webp" width="1100" height="1467" alt="Equipe do escritório Sabrina Ferreira Interiores reunida na recepção" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- ══ CASACOR ══ -->
+<section class="casacor" id="casacor">
+  <div class="wrap">
+    <p class="cota cota--claro">Reconhecimento</p>
+    <h2 class="titulo-secao titulo-secao--claro">CASACOR 2025</h2>
+    <p class="casacor__texto revelar">Em 2025, Sabrina Ferreira participou da CASACOR Santa Catarina em parceria com a Dimas Construções, apresentando o ambiente <em>Janelas para o Mundo</em>. Uma conquista que reforça o compromisso do escritório com projetos autorais, sofisticados e executados com excelência.</p>
+  </div>
+
+  <div class="tira" id="tira-casacor"
+    data-nome="Janelas para o Mundo"
+    data-cat="CASACOR Santa Catarina 2025"></div>
+
+  <div class="wrap">
+    <button class="casacor__cta" type="button" id="ver-casacor">Ver o ambiente completo</button>
+  </div>
+</section>
+
+<!-- ══ PROCESSO ══ -->
+<section class="processo" id="processo">
+  <div class="wrap">
+    <p class="cota cota--claro">Como trabalhamos</p>
+    <h2 class="titulo-secao titulo-secao--claro">Do briefing à entrega</h2>
+    <p class="processo__intro revelar">Um caminho definido, com etapas claras e prazos combinados, para você saber sempre em que ponto o seu projeto está.</p>
+
+    <div class="fases">
+      <article class="fase revelar">
+        <span class="fase__grupo">Escuta</span>
+        <span class="fase__num">1.0</span>
+        <h3>Conceito</h3>
+        <ul>
+          <li>Conversa inicial e briefing</li>
+          <li>Levantamento do imóvel</li>
+          <li>Estudo preliminar e layout</li>
+          <li>Definição do conceito e da paleta</li>
+        </ul>
+      </article>
+
+      <article class="fase revelar">
+        <span class="fase__grupo">Projeto</span>
+        <span class="fase__num">2.0</span>
+        <h3>Detalhamento</h3>
+        <ul>
+          <li>Anteprojeto e imagens em 3D</li>
+          <li>Detalhamento de marcenaria</li>
+          <li>Projeto de iluminação e pontos elétricos</li>
+          <li>Especificação de revestimentos e acabamentos</li>
+        </ul>
+      </article>
+
+      <article class="fase revelar">
+        <span class="fase__grupo">Obra</span>
+        <span class="fase__num">3.0</span>
+        <h3>Execução</h3>
+        <ul>
+          <li>Acompanhamento da obra</li>
+          <li>Reuniões com marcenaria e fornecedores</li>
+          <li>Curadoria de mobiliário e décor</li>
+          <li>Entrega do ambiente montado</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SERVIÇOS ══ -->
+<section class="servicos" id="servicos">
+  <div class="wrap">
+    <p class="cota">Serviços</p>
+    <h2 class="titulo-secao">Escolha o ponto de partida</h2>
+
+    <div class="cards">
+      <article class="card revelar">
+        <h3>Residencial</h3>
+        <p>Projeto de design de interiores para casas, apartamentos e coberturas. Layout, marcenaria, iluminação e acabamentos pensados juntos, para transformar o imóvel no lugar onde você quer estar todos os dias.</p>
+        <a class="card__cta" href="https://wa.me/5548988482359?text=Quero%20falar%20sobre%20um%20projeto%20de%20interiores%20residencial" target="_blank" rel="noopener">Falar sobre minha casa</a>
+      </article>
+
+      <article class="card revelar">
+        <h3>Comercial</h3>
+        <p>Lojas, showrooms, escritórios e clínicas. Ambientes que traduzem a marca, organizam o fluxo de quem trabalha e criam uma boa experiência para quem chega.</p>
+        <a class="card__cta" href="https://wa.me/5548988482359?text=Quero%20falar%20sobre%20um%20projeto%20comercial" target="_blank" rel="noopener">Falar sobre meu negócio</a>
+      </article>
+
+      <article class="card revelar">
+        <h3>Hotelaria</h3>
+        <p>Pousadas, apart-hotéis e áreas comuns. Projetos que equilibram conforto, identidade e durabilidade, com soluções pensadas para alta rotatividade.</p>
+        <a class="card__cta" href="https://wa.me/5548988482359?text=Quero%20falar%20sobre%20um%20projeto%20de%20hotelaria" target="_blank" rel="noopener">Falar sobre hospedagem</a>
+      </article>
+
+      <article class="card revelar">
+        <h3>Acompanhamento de execução</h3>
+        <p>Para quem já tem o projeto e quer garantir que ele saia do papel exatamente como foi desenhado. Visitas à obra, reuniões com fornecedores e curadoria até a montagem final.</p>
+        <a class="card__cta" href="https://wa.me/5548988482359?text=Quero%20falar%20sobre%20acompanhamento%20de%20execu%C3%A7%C3%A3o" target="_blank" rel="noopener">Falar sobre a execução</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CONTATO ══ -->
+<section class="contato" id="contato">
+  <div class="wrap contato__grid">
+    <div>
+      <p class="cota cota--claro">Contato</p>
+      <h2 class="titulo-grande titulo-grande--claro">Conte como<br><em>você quer viver</em></h2>
+      <p class="contato__apoio">Responder leva pouco. Descreva o imóvel, o que você imagina para ele e o prazo que tem em mente. A partir daí marcamos uma conversa.</p>
+
+      <dl class="contato__dados">
+        <div><dt>WhatsApp</dt><dd><a href="https://wa.me/5548988482359" target="_blank" rel="noopener">(48) 98848-2359</a></dd></div>
+        <div><dt>E-mail</dt><dd><a href="mailto:contato@sabrinaferreirainteriores.com">contato@sabrinaferreirainteriores.com</a></dd></div>
+        <div><dt>Instagram</dt><dd>
+          <a href="https://instagram.com/sabrinaferreirainteriores" target="_blank" rel="noopener">@sabrinaferreirainteriores</a><br>
+          <a href="https://instagram.com/sf.arqinteriores" target="_blank" rel="noopener">@sf.arqinteriores</a>
+        </dd></div>
+        <div><dt>Escritório</dt><dd>K-Platz, R. Elizeu di Bernardi, 34 - Sala 306<br>Campinas, São José - SC, 88101-050</dd></div>
+        <div><dt>Atendimento</dt><dd>Florianópolis, São José e região</dd></div>
+      </dl>
+    </div>
+
+    <form class="form" id="form-contato" novalidate>
+      <div class="campo">
+        <label for="nome">Nome</label>
+        <input id="nome" name="nome" type="text" required autocomplete="name">
+      </div>
+      <div class="campo">
+        <label for="fone">WhatsApp</label>
+        <input id="fone" name="fone" type="tel" required autocomplete="tel" placeholder="(00) 00000-0000">
+      </div>
+      <div class="campo">
+        <label for="tipo">Tipo de projeto</label>
+        <select id="tipo" name="tipo">
+          <option>Residencial</option>
+          <option>Comercial</option>
+          <option>Hotelaria</option>
+          <option>Acompanhamento de execução</option>
+          <option>Ainda não sei</option>
+        </select>
+      </div>
+      <div class="campo">
+        <label for="msg">Conte um pouco sobre o projeto</label>
+        <textarea id="msg" name="msg" rows="4" required></textarea>
+      </div>
+      <button class="btn btn--brasa btn--bloco" type="submit">Agendar uma conversa</button>
+      <p class="form__nota">O envio abre uma conversa no WhatsApp com a mensagem pronta.</p>
+    </form>
+  </div>
+</section>
+
+<footer class="rodape">
+  <div class="wrap rodape__grid">
+    <a class="rodape__marca" href="#topo">
+      <svg class="marca__icone" viewBox="0 0 48 48" aria-hidden="true">
+        <path d="M12 40V21a12 12 0 0 1 24 0v19" fill="none" stroke="currentColor" stroke-width="2.2"/>
+        <path d="M24 40V11" fill="none" stroke="currentColor" stroke-width="2.2" opacity=".5"/>
+      </svg>
+      <span class="marca__nome">Sabrina Ferreira<i>Interiores</i></span>
+    </a>
+    <nav class="rodape__menu" aria-label="Rodapé">
+      <a href="#escritorio">Escritório</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#time">Time</a>
+      <a href="#casacor">CASACOR</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <address class="rodape__endereco">
+      <a href="https://www.google.com/maps/search/?api=1&query=K-Platz%2C%20R.%20Elizeu%20di%20Bernardi%2C%2034%20-%20Campinas%2C%20S%C3%A3o%20Jos%C3%A9%20-%20SC%2C%2088101-050" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg>
+        <span>K-Platz, R. Elizeu di Bernardi, 34 - Sala 306<br>Campinas, São José - SC, 88101-050</span>
+      </a>
+    </address>
+    <p class="rodape__legal">© <span id="ano">2026</span> Sabrina Ferreira Interiores</p>
+  </div>
+</footer>
+
+<div class="flutuantes">
+  <a class="fab ig-flutuante" href="https://instagram.com/sabrinaferreirainteriores" target="_blank" rel="noopener" aria-label="Instagram">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.31-1.46.72-2.13 1.38C1.35 2.68.94 3.35.63 4.14.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.79.72 1.46 1.38 2.13.67.66 1.34 1.07 2.13 1.38.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56.79-.31 1.46-.72 2.13-1.38.66-.67 1.07-1.34 1.38-2.13.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91-.31-.79-.72-1.46-1.38-2.13-.67-.66-1.34-1.07-2.13-1.38-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0Zm0 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84Zm0 10.16A4 4 0 1 1 16 12a4 4 0 0 1-4 4Zm6.41-10.85a1.44 1.44 0 1 0 1.44 1.44 1.44 1.44 0 0 0-1.44-1.44Z"/></svg>
+  </a>
+  <a class="fab wpp-flutuante" href="https://wa.me/5548988482359?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20conversa%20sobre%20um%20projeto%20de%20interiores." target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.18 8.18 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.83 2.41a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.15.16-.29.18-.53.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.71-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.47c-.16 0-.43.06-.65.31-.22.24-.86.84-.86 2.05s.88 2.38 1 2.54c.12.17 1.73 2.64 4.19 3.7.59.25 1.04.4 1.4.52.59.19 1.12.16 1.54.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.11-.22-.17-.47-.29Z"/></svg>
+  </a>
+</div>
+
+<!-- Lightbox -->
+<div class="lupa" id="lupa" hidden aria-modal="true" role="dialog">
+  <button class="lupa__fechar" aria-label="Fechar galeria">&times;</button>
+  <span class="lupa__contador" id="lupa-contador"></span>
+  <button class="lupa__nav lupa__nav--ant" aria-label="Foto anterior">&#8249;</button>
+  <button class="lupa__nav lupa__nav--prox" aria-label="Próxima foto">&#8250;</button>
+  <figure>
+    <img id="lupa-img" src="" alt="">
+    <figcaption id="lupa-legenda"></figcaption>
+  </figure>
+</div>
+
+<script src="projetos.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
