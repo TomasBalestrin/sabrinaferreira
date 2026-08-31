@@ -17,12 +17,17 @@ Abra <http://localhost:8899>.
 |---|---|
 | `index.html` | Todas as seções da página |
 | `styles.css` | Estilos e paleta (variáveis CSS no `:root`) |
+| | Cores da marca: navy `#243746` e champanhe `#D2B9A2` |
 | `projetos.js` | Catálogo dos projetos que monta a grade e as galerias |
 | `script.js` | Menu mobile, filtro, lightbox, tira da CASACOR e envio do formulário |
 | `assets/hero/` | Banner do primeiro bloco (desktop e mobile) |
 | `assets/projetos/<slug>/` | Capa e fotos de cada projeto, já redimensionadas |
 | `assets/sabrina.webp`, `assets/equipe.webp` | Retrato da arquiteta e foto do time |
-| `assets/marca.svg` | Símbolo usado como favicon |
+| `assets/marca.png` | Monograma SF, champanhe (topo) |
+| `assets/assinatura-clara.png` | "Sabrina Ferreira / Interiores" em creme (topo) |
+| `assets/logo-claro.png` | Lockup completo em creme, para fundo escuro (rodapé) |
+| `assets/logo-escuro.png` | Lockup completo nas cores originais, para fundo claro |
+| `assets/favicon.png` | Monograma sobre quadrado navy |
 | `originais/` | Fotos originais enviadas pelo cliente. **Não publicar** (1,4 GB) |
 
 Todas as imagens são WebP, com uma exceção deliberada: `assets/hero/banner.jpg`
@@ -47,10 +52,9 @@ mudar, reveja quais entradas levam `largo`.
 
 ## Ainda a preencher
 
-- **Logo oficial** — não veio arquivo da marca. O cabeçalho e o rodapé usam um
-  lockup tipográfico ("Sabrina Ferreira / Interiores") com um símbolo em arco.
-  Assim que houver o PNG/SVG da marca, é só trocar o `<svg class="marca__icone">`
-  no `index.html` por um `<img>` e ajustar `.marca__icone` no CSS.
+- **Logo em vetor** — as versões em `assets/` foram geradas a partir de um PNG
+  de 1730×672 (`originais/logo-original.png`). Para material impresso ou para
+  exibir a marca muito grande, vale pedir o arquivo vetorial (SVG, AI ou EPS).
 - **Registro CAU** — o rodapé hoje traz só o nome; se quiser exibir o número,
   ele entra em `.rodape__legal`.
 - **Analytics** — o GTM e o Microsoft Clarity do site anterior foram removidos
