@@ -28,6 +28,7 @@ Abra <http://localhost:8899>.
 | `assets/logo-claro.png` | Lockup completo em creme, para fundo escuro (rodapé) |
 | `assets/logo-escuro.png` | Lockup completo nas cores originais, para fundo claro |
 | `assets/favicon.png` | Monograma sobre quadrado navy |
+| `sitemap.xml`, `robots.txt` | Indexação. Apontam para o domínio final |
 | `originais/` | Fotos originais enviadas pelo cliente. **Não publicar** (1,4 GB) |
 
 Todas as imagens são WebP, com uma exceção deliberada: `assets/hero/banner.jpg`
@@ -65,8 +66,18 @@ mudar, reveja quais entradas levam `largo`.
 - **Search Console** — instalar no dia do deploy. É a única fonte que mostra as
   buscas reais que trazem gente ao site, inclusive as que as ferramentas de
   volume marcam como zero.
-- **Dados estruturados** — ainda não há JSON-LD de `LocalBusiness`. Para incluir
-  faltam horário de atendimento e coordenadas do escritório.
+- **Domínio no `sitemap.xml`, no `robots.txt` e no JSON-LD** — os três trazem
+  `https://www.sabrinaferreirainteriores.com/` fixo. Se o endereço final for
+  outro, precisa trocar nos três arquivos e na `canonical`.
+- **JSON-LD incompleto** — faltam `openingHours`, `geo` e `priceRange`. São
+  campos opcionais, deixados de fora por não haver dado confirmado. Preenchê-los
+  ajuda na busca local.
+- **Conteúdo raso** — 732 palavras visíveis. Para disputar termo comercial vale
+  responder o que o cliente pesquisa antes de contratar: como funciona, prazo,
+  o que está incluso, faixa de investimento.
+- **Páginas por projeto** — hoje é uma URL só, ou seja, um alvo de busca só. Os
+  13 projetos do `projetos.js` são a matéria-prima para páginas próprias, que é
+  onde as buscas de cauda longa costumam converter.
 
 ## Formulário de contato
 
