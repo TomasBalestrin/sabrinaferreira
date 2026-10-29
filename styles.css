@@ -720,8 +720,21 @@ a{ color:inherit; }
 }
 .fab svg{ width:28px; height:28px; fill:currentColor; }
 .fab:hover{ transform:translateY(-2px); }
-.wpp-flutuante{ background:#25D366; }
+.wpp-flutuante{ background:#25D366; position:relative; }
 .wpp-flutuante:hover{ background:#1EBE5B; }
+.wpp-flutuante::after{
+  content:"";
+  position:absolute; inset:0;
+  border-radius:50%;
+  box-shadow:0 0 0 0 rgba(37,211,102,.6);
+  animation:pulso-wpp 2.2s infinite;
+  pointer-events:none;
+}
+@keyframes pulso-wpp{
+  0%{ box-shadow:0 0 0 0 rgba(37,211,102,.55); }
+  70%{ box-shadow:0 0 0 16px rgba(37,211,102,0); }
+  100%{ box-shadow:0 0 0 0 rgba(37,211,102,0); }
+}
 .ig-flutuante{
   background:radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
 }
