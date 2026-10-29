@@ -279,7 +279,11 @@ a{ color:inherit; }
   font-size:clamp(.96rem,.9rem + .25vw,1.08rem);
   font-weight:600;
 }
-.hero__cta{ margin:0 0 2.1rem; }
+.hero__cta{
+  margin:0 0 2.1rem;
+  background:#25D366; color:#fff; border-color:#25D366;
+}
+.hero__cta:hover{ background:#1EBE5B; border-color:#1EBE5B; color:#fff; }
 .selos{
   list-style:none; margin:0; padding:0;
   display:flex; flex-wrap:wrap; gap:.7rem 2rem;
